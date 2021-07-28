@@ -1,0 +1,18 @@
+package com.execution;
+
+import org.junit.runner.RunWith;
+import org.junit.runners.Suite.SuiteClasses;
+
+import com.defined.Defined;
+
+import cucumber.api.CucumberOptions;
+import cucumber.api.junit.Cucumber;
+@RunWith(Cucumber.class)
+@CucumberOptions(
+		features="./src/test/resources/com/feature/vaishu.feature",
+		glue="com.defined",
+		tags="@name",
+		rerun=		)
+public class Execution {
+
+}
